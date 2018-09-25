@@ -1,2 +1,2 @@
-# zinc-glaze.github.io
-Class Git Assignment
+# Bootstrap-Portfolio
+Zeke Graves Bootstrap Homework
