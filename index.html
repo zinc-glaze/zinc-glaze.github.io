@@ -1,55 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Zeke Graves - About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Zeke Graves Portfolio</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  
 </head>
-<body style="background-image: url(assets/images/what-the-hex.png);">
-    <!-- Header & Nav Bar-->
-    <header style="background-color: #ffffff; border-color: #cccccc; border-style: solid; border-width: 0px 0px 2px 0px">
-        <div class="container p-0">
-            <nav class="navbar p-0">
-                <a class="navbar-brand px-4 py-3 m-0" style="color: white; background-color: #4aaaa5; font-size: 34px; font-family: 'Georgia', Times, Times New Roman, serif;" href="index.html">Zeke Graves</a>
-                <span class="nav justify-content-end">
-                    <a class="nav-link text-secondary h5 font-weight-normal" href="index.html">About</a>
-                    <a class="nav-link text-secondary h5 font-weight-normal" href="portfolio.html">Portfolio</a>
-                    <a class="nav-link text-secondary h5 font-weight-normal" href="contact.html">Contact</a>
-                </span>
-            </nav>
+
+<body>
+  <nav class="cyan darken-2">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#!" class="brand-logo">Zeke Graves</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">About Me</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+
+  <main>
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content cyan-text text-darken-4">
+              <span class="card-title cyan-text text-darken-2">About Me</span>
+              <img src="assets/images/profile_image_01_resized.jpg" alt="Zeke with Analog Tape Reel" id="bio-img" class="left responsive-img z-depth-1">
+              <p class="bio">I am an Audio Production Specialist within the Digital Collections and Curation Department at Duke Libraries. This means that I convert rare and historic analog recordings into a digital format to be archived and made available to researchers. While I also work with video, manuscripts, maps, and all kinds of other items, my passion is for sound and all of the ways it can be captured, altered, and shared. I truly believe that "obsolete" technologies have their own strengths and charms, and do not always have to be discarded when a new technology comes along.
+              </p>
+              <br />
+              <p class="bio">I have also been active as a performing and recording musician in the Triangle for the past 20 years. Currently, I play various stringed and keyboard instruments in the bands <a href="https://dreamless1.bandcamp.com/" target="_blank" class="text-info">Dreamless</a>, SNAKE, and the <a href="https://crowmeatbob.bandcamp.com/album/blood-jar-creepers" target="_blank" class="text-info">Blood Jar Creepers</a>. I recently contributed bass guitar to the album <cite><a href="https://productofpalmyra.elephantmicah.com/album/genericana" target="_blank" class="text-info">Genericana</a></cite> by Elephant Micah. I also have a solo project called <a href="http://www.northgatesyndicate.com" target= "_blank" class="text-info">Northgate Syndicate</a> where I bring together my interests in experimental and vernacular music from around the world.
+              </p>
+              <br />
+              <p class="bio">I am currently enrolled in the UNC Coding Bootcamp. My future plans are to continue learning about web development and exploring the ways that I might be able to merge my new skills with my interests in art, music, and audio technology.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/zinc-glaze" target="_blank" class="cyan-text">GitHub</a>
+              <br />
+              <a href="assets/docs/zekegravesresume2018.pdf" target="_blank"class="cyan-text">CV</a>
+            </div>
+          </div>
         </div>
-    </header> 
-    <!-- Main Content-->
-    <main>
-        <div class="container my-4 p-4 border" style="background-color: #ffffff;">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 style="color: #4aaaa5; font-size: 32px; font-family: 'Georgia', Times, Times New Roman, serif;">About Me</h3>
-                    <hr style="border-width: 3px 0px 0px 0px; border-style: solid;" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 text-secondary h5 font-weight-normal">
-                    <p><img src="assets/images/profile_image_01_resized.jpg" alt="Zeke with Analog Tape Reel" class="img-fluid float-left mr-4 mb-1">I am an Audio Production Specialist within the Digital Collections and Curation Department at Duke Libraries. This means that I convert rare and historic analog recordings into a digital format to be archived and made available to researchers. While I also work with video, manuscripts, maps, and all kinds of other items, my passion is for sound and all of the ways it can be captured, altered, and shared. I truly believe that "obsolete" technologies have their own strengths and charms, and do not always have to be discarded when a new technology comes along.
-                    </p>
-                    <p>I have also been active as a performing and recording musician in the Triangle for the past 20 years. Currently, I play various stringed and keyboard instruments in the bands <a href="https://dreamless1.bandcamp.com/" target="_blank" class="text-info">Dreamless</a>, SNAKE, and the <a href="https://crowmeatbob.bandcamp.com/album/blood-jar-creepers" target="_blank" class="text-info">Blood Jar Creepers</a>. I recently contributed bass guitar to the album <cite><a href="https://productofpalmyra.elephantmicah.com/album/genericana" target="_blank" class="text-info">Genericana</a></cite> by Elephant Micah. I also have a solo project called <a href="http://www.northgatesyndicate.com" target= "_blank" class="text-info">Northgate Syndicate</a> where I bring together my interests in experimental and vernacular music from around the world.
-                    </p>
-                    <p>I am currently enrolled in the UNC Coding Bootcamp. My future plans are to continue learning about web development and exploring the ways that I might be able to merge my new skills with my interests in art, music, and audio technology.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- Footer -->
-    <footer class="fixed-bottom" style="height: 60px; color: white; background-color: #666666; border-color: #4aaaa5; border-width: 8px 0px 0px 0px; border-style: solid;">
-        <div class="container">
-            <div class="row text-center pt-4">
-                <div class="col-sm-12">
-                    <small>&copy; Copyright 2018</small>
-                </div>
-            </div>
-        </div>  
-    </footer>
+      </div>
+    </div>
+  </main>
+
+  <!--  SCRIPTS-->
+  <!-- jQuery -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- Materialize -->
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <!-- App -->
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
-</html>
