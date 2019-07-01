@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Zeke Graves Portfolio</title>
 
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery.js"></script>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -14,6 +16,13 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script>
+      //Initalialize the Form Select and Modal Trigger for Materialize  
+        $(document).ready(function() {
+          $('select').formSelect();
+          $('.modal').modal();
+        });
+    </script>
   
 </head>
 
@@ -58,9 +67,29 @@
                     <div class="card-action center-align  grey lighten-5">
                       <a href="https://zinc-glaze.github.io/memory-matrix/" target="_blank" class="cyan-text">Demo</a>
                       <a href="https://github.com/zinc-glaze/memory-matrix" target="_blank" class="cyan-text">Code</a>
+                      <a class="cyan-text modal-trigger" href="#memory-matrix-modal">Info</a>
                     </div>
                   </div>
                 </div>
+                <!-- Project Info Modal -->
+                <div id="memory-matrix-modal" class="modal">
+                    <div class="modal-content">
+                      <h4>Memory Matrix</h4>
+                      <p>This is a memory game that presents the user with 12 image tiles. The user must click each tile without clicking the same one twice. The tiles are rearranged after each click. The game keeps score of how many unique tiles the user has clicked and the high score from each session.</p>
+                      <br/>
+                      <p>The main purpose of this app is to practice creating a React app, composing multiple components, and managing state. It demonstrates ability with the following tools and techniques:
+                        <ul class="collection">
+                          <li class="collection-item">React.js for front-end framework, logic, and state management</li>
+                          <li class="collection-item">CSS for UI design, layout, and animations</li>
+                          <li class="collection-item">Javascript/JSX for app logic and interactive elements</li>
+                          <li class="collection-item">Github for app deployment and hosting</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                  </div>
                 <div class="col s12 m6 l4">
                   <div class="card small portfolio-img">
                     <div class="card-image">
@@ -72,7 +101,33 @@
                     <div class="card-action center-align grey lighten-5">
                         <a href="https://scrape-left.herokuapp.com/" target="_blank" class="cyan-text">Demo</a>
                       <a href="https://github.com/zinc-glaze/scrape-left" target="_blank" class="cyan-text">Code</a>
+                      <a class="cyan-text modal-trigger" href="#scrape-left-modal">Info</a>
                       </div>
+                    </div>
+                  </div>
+                  <!-- Project Info Modal -->
+                <div id="scrape-left-modal" class="modal">
+                    <div class="modal-content">
+                      <h4>Scrape Left</h4>
+                      <p>This app allows the user to easily scrape the most recent articles from Truthout.org, save them to a database, and display them in a single list with a summary and link. Once scraped, the articles can be saved and commented on. From the Saved view, the user can add notes which are then saved and displayed with the relevant article. Articles can also be deleted.</p>
+                      <br/>
+                      <p>The main purpose of this app is to create an aggregator that can be repurposed to scrape and save from any website that posts frequent updates. It demonstrates ability with the following tools and techniques:
+                        <ul class="collection">
+                          <li class="collection-item">Handlebars and HTML for web page templates and structure</li>
+                          <li class="collection-item">Materialize for CSS framework</li>
+                          <li class="collection-item">Node.js for Javascript runtime environment</li>
+                          <li class="collection-item">Express.js for server setup and routing</li>
+                          <li class="collection-item">Javascript for app logic and interactive elements</li>
+                          <li class="collection-item">jQuery for additional Javascript functionality and AJAX calls to server</li>
+                          <li class="collection-item">Heroku for app deployment and hosting</li>
+                          <li class="collection-item">MVC design pattern for app architecture</li>
+                          <li class="collection-item">MongoDB for data persistance</li>
+                          <li class="collection-item">Mongoose, Cheerio, and Axios npm packages</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
                     </div>
                   </div>
                 <div class="col s12 m6 l4">
@@ -86,9 +141,33 @@
                     <div class="card-action center-align grey lighten-5">
                       <a href="https://burger-devourer-app.herokuapp.com/" target="_blank" class="cyan-text">Demo</a>
                       <a href="https://github.com/zinc-glaze/Burger" target="_blank" class="cyan-text">Code</a>
+                      <a class="cyan-text modal-trigger" href="#burger-devourer-modal">Info</a>
                     </div>
                   </div>
                 </div>
+                <!-- Project Info Modal -->
+                <div id="burger-devourer-modal" class="modal">
+                    <div class="modal-content">
+                      <h4>Burger Devourer</h4>
+                      <p>This app allows the user to create different burgers that they would like to consume and add them to a MySQL database. These burgers will be displayed to the user with a "Devour" button. On clicking this button, the burger will be consumed, it's status will be changed to "devoured" in the database, and it will be displayed to the user in a list of "Consumed" burgers.</p>
+                      <br/>
+                      <p>The main purpose of this app is to demonstrate ability with the following tools and techniques, especially Handlebars and custom ORMs:
+                        <ul class="collection">
+                          <li class="collection-item">Handlebars and HTML for web page templates and structure</li>
+                          <li class="collection-item">Materialize for CSS framework</li>
+                          <li class="collection-item">Node.js for Javascript runtime environment</li>
+                          <li class="collection-item">Express.js for server setup and routing</li>
+                          <li class="collection-item">Javascript for app logic and interactive elements</li>
+                          <li class="collection-item">jQuery for additional Javascript functionality and AJAX calls to server</li>
+                          <li class="collection-item">Heroku for app deployment and hosting</li>
+                          <li class="collection-item">MVC design pattern for app architecture</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                  </div>
                 <div class="col s12 m6 l4">
                   <div class="card small portfolio-img">
                     <div class="card-image">
@@ -100,9 +179,32 @@
                     <div class="card-action center-align grey lighten-5">
                       <a href="https://zombie-friend-finder.herokuapp.com/" target="_blank" class="cyan-text">Demo</a>
                       <a href="https://github.com/zinc-glaze/FriendFinder" target="_blank" class="cyan-text">Code</a>
+                      <a class="cyan-text modal-trigger" href="#zombie-friend-finder-modal">Info</a>
                     </div>
                   </div>
                 </div>
+                <!-- Project Info Modal -->
+                <div id="zombie-friend-finder-modal" class="modal">
+                    <div class="modal-content">
+                      <h4>Zombie Friend Finder</h4>
+                      <p>This app creates a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site takes in results from the users' surveys, then compares their answers with those from other users. The app will then display the name and picture of the user with the best overall match. The app includes input validation to prevent the user submitting empty data fields and posting them to the API (../api/friends).</p>
+                      <br/>
+                      <p>This app uses the following tools:
+                        <ul class="collection">
+                          <li class="collection-item">HTML for web page structure</li>
+                          <li class="collection-item">Materialize for CSS framework</li>
+                          <li class="collection-item">Node.js for Javascript runtime environment</li>
+                          <li class="collection-item">Express.js for server setup and routing</li>
+                          <li class="collection-item">Javascript for app logic and interactive elements</li>
+                          <li class="collection-item">jQuery for additional Javascript functionality and AJAX calls to server</li>
+                          <li class="collection-item">Heroku for app deployment and hosting</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                  </div>
                 <div class="col s12 m6 l4">
                   <div class="card small portfolio-img">
                     <div class="card-image">
@@ -114,9 +216,31 @@
                     <div class="card-action center-align grey lighten-5">
                         <a href="https://github.com/zinc-glaze/Zmart" target="_blank" class="cyan-text">Demo</a>
                         <a href="https://github.com/zinc-glaze/Zmart" target="_blank" class="cyan-text">Code</a>
+                        <a class="cyan-text modal-trigger" href="#zmart-modal">Info</a>
                       </div>
                   </div>
                 </div>
+                <!-- Project Info Modal -->
+                <div id="zmart-modal" class="modal">
+                    <div class="modal-content">
+                      <h4>ZMart</h4>
+                      <p>This app creates a storefront with separate modules for customers, managers, and supervisors to perform tasks. The app takes in orders from customers and depletes stock from the store's inventory. The app allows managers to add new products and track and replenish inventory.The supervisor module allows you to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.</p>
+                      <br/>
+                      <p>This app uses the following tools:
+                        <ul class="collection">
+                          <li class="collection-item">MySQL for data persistence and database queries</li>
+                          <li class="collection-item">Node.js for Javascript runtime environment</li>
+                          <li class="collection-item">Javascript for app logic</li>
+                          <li class="collection-item">inquirer npm package for user input</li>
+                          <li class="collection-item">cli-table npm package for formatting data tables for display</li>
+                          <li class="collection-item">mysql npm package for database queries</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                  </div>
                 <div class="col s12 m6 l4">
                   <div class="card small portfolio-img">
                     <div class="card-image">
@@ -128,10 +252,30 @@
                     <div class="card-action center-align  grey lighten-5">
                       <a href="https://zinc-glaze.github.io/ComicsTimeMachine/" target="_blank" class="cyan-text">Demo</a>
                       <a href="https://github.com/zinc-glaze/ComicsTimeMachine" target="_blank" class="cyan-text">Code</a>
+                      <a class="cyan-text modal-trigger" href="#comics-time-machine-modal">Info</a>
                     </div>
                   </div>
                 </div>
-                
+                <!-- Project Info Modal -->
+                <div id="comics-time-machine-modal" class="modal">
+                    <div class="modal-content">
+                      <h4>Comics Time Machine</h4>
+                      <p>This is a entertainment and shopping app that retrieves Marvel comic books that were published the week of your birthday (or any other date). The app queries the Marvel API and returns a selection of comics (with image thumbnails) for the submitted date. When the user clicks one of these thumbnails, the app queries the eBay API to return the top result for that comic</p>
+                      <br/>
+                      <p>The main purpose of this app is to demonstrate ability interfacing with APIs. It uses the following tools and techniques:
+                        <ul class="collection">
+                          <li class="collection-item">HTML</li>
+                          <li class="collection-item">jQuery for Javascript library and AJAX calls</li>
+                          <li class="collection-item">Materialize for CSS framework</li>
+                          <li class="collection-item">Javascript for app logic and interactive elements</li>
+                          <li class="collection-item">Marvel and eBay APIs</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
